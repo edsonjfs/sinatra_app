@@ -1,6 +1,6 @@
 ENV['APP_ENV'] = 'test'
 
-require_relative '../app/controllers/application_controller'
+require_relative '../application_controller'
 require 'rack/test'
 require 'rspec'
 

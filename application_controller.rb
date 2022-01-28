@@ -1,9 +1,5 @@
 require 'sinatra'
 
-configure do
-  set :public_folder, '../../public'
-end
-
 get '/' do
   erb :index
 end
