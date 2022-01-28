@@ -16,17 +16,12 @@ RSpec.describe 'Application Controller App' do
     expect(last_response).to be_ok
   end
 
-  it 'test index page HTTP status' do
-    get '/personal_info'
-    expect(last_response).to be_ok
-  end
-
-  it 'test index page HTTP status' do
+  it 'test graduation_info page HTTP status' do
     get '/graduation_info'
     expect(last_response).to be_ok
   end
 
-  it 'test index page HTTP status' do
+  it 'test pull_requests page HTTP status' do
     get '/pull_requests'
     expect(last_response).to be_ok
   end
