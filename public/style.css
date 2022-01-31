@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-:root{
+:root {
     --cor0:#c5ebd6;
     --cor1:#83e1ad;
     --cor2:#3ddc84;
@@ -10,14 +10,14 @@
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
 }
 
-header{
+header {
     background-image: linear-gradient(to bottom,var(--cor3),var(--cor5) );    
     min-height: 150px;
     text-align: center;
     padding-top: 25px;
 }
 
-header > h1{
+header > h1 {
     color:white;
     font-family: var(--fonte-padrao);
     font-size: 3em;
@@ -31,7 +31,7 @@ header > h1{
     background-color: #063d1e;
 }
 
-.menu  a{
+.menu  a {
     float: left;
     color: rgb(255, 255, 255);
     font-size: 20px;
@@ -48,11 +48,11 @@ header > h1{
     text-align: center;
 }
 
-.menu li{
+.menu li {
     display: inline-block;
 }
 
-main{
+main {
     background-color: white;
     min-width: 300px;
     max-width: 1000px;
@@ -64,7 +64,7 @@ main{
     border-bottom-right-radius: 10px;   
 }
 
-main h1{
+main h1 {
     text-align: center;
     color:black;
     font-family: var(--fonte-padrao);
@@ -85,13 +85,13 @@ main h1{
     text-align: center;
 }
 
-.logos{
+.logos {
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
     padding: 50px;   
 }
 
-.meu_tcc{
+.meu_tcc {
     height: 700px;
 }
