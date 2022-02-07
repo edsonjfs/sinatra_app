@@ -11,18 +11,31 @@ RSpec.describe 'Application Controller App' do
     Sinatra::Application
   end
 
-  it 'test index page HTTP status' do
-    get '/'
-    expect(last_response).to be_ok
+  describe 'index page "/"' do
+    it 'test index page HTTP status' do
+      get '/'
+      expect(last_response).to be_ok
+    end
   end
 
-  it 'test graduation_info page HTTP status' do
-    get '/graduation_info'
-    expect(last_response).to be_ok
+  describe '/graduation_info page' do
+    it 'test graduation_info page HTTP status' do
+      get '/graduation_info'
+      expect(last_response).to be_ok
+    end
   end
 
-  it 'test pull_requests page HTTP status' do
-    get '/pull_requests'
-    expect(last_response).to be_ok
+  describe '/pull_requests page' do
+    it 'test pull_requests page HTTP status' do
+      get '/pull_requests'
+      expect(last_response).to be_ok
+    end
+  end
+
+  describe 'inexistent page' do
+    it 'test accessing an inexistent url' do
+      get '/fake_url'
+      expect(last_response).to_not be_ok
+    end
   end
 end
