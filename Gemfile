@@ -2,11 +2,13 @@ source 'https://rubygems.org'
 
 ruby '3.1.0'
 
-gem 'foreman'
-gem 'guard'
-gem 'guard-rspec'
 gem 'json'
-gem 'rack-test'
-gem 'rspec'
+gem 'rubocop', require: false
 gem 'sinatra'
 gem 'sinatra-contrib'
+
+group :test do
+  gem 'rack-test'
+  gem 'rspec'
+  gem 'simplecov', require: false
+end
